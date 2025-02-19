@@ -19,7 +19,7 @@ import {
   LiquorOutlined,
 } from "@mui/icons-material";
 import { useLocation, useNavigate } from "react-router-dom";
-import "./css/sidebar.css";
+
 
 export default function Sidebar() {
   const navigate = useNavigate();
@@ -40,15 +40,13 @@ export default function Sidebar() {
       subcategories: [
         { name: "Recipe Summary", icon: <KitchenOutlined />, route: "/recipesummary" },
         { name: "Food Recipe", icon: <KitchenOutlined />, route: "/foodrecipe" },
-        { name: "Rate Master", icon: <KitchenOutlined />, route: "/ratemasterdata" },
+        { name: "Rate Master", icon: <KitchenOutlined />, route: "/ratemaster" },
         { name: "Base Recipe", icon: <KitchenOutlined />, route: "/baserecipe" },
       ],
     },
     
-    { title: "Rate Master", icon: <DescriptionOutlined />, route: "/ratemaster" },
-    { title: "Menu Eng Report", icon: <DescriptionOutlined />, route: "/comingsoon" },
-    { title: "Restaurant", icon: <DescriptionOutlined />, route: "/comingsoon" },
-    { title: "predefined", icon: <DescriptionOutlined />, route: "/comingsoon" },
+    { title: "Ingrediant Rate Master", icon: <DescriptionOutlined />, route: "/ingratemaster" },
+    { title: "Menu Eng Report", icon: <DescriptionOutlined />, route: "/menueng" },
     { title: "Logout", icon: <SettingsOutlined />, route: "/comingsoon" },
   ];
 

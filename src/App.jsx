@@ -2,18 +2,12 @@ import { ThemeProvider, CssBaseline, createTheme } from "@mui/material";
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
 import RootComponent from "./components/RootComponent";
 import Home from "./components/categories/Home";
-import Report from "./components/categories/Report";
-import Access from "./components/categories/Access";
-import Setting from "./components/categories/Setting";
 import Summaryrecipe from "./components/categories/Summaryrecipe";
 import Foodrecipe from "./components/categories/Foodrecipe";
-import Summaryentry from "./components/categories/Summaryentry";
-import Foodrecipeentry from "./components/categories/Foodrecipeentry";
-import Baserecipeentry from "./components/categories/Baserecipeentry";
-import Ratemaster from "./components/categories/Ratemaster";
-import Ratemasterentry from "./components/categories/Ratemasterentry";
+import Ingredientratemaster from "./components/categories/Ingredientratemaster";
 import Baserecipe from "./components/categories/Baserecipe";
-import Ratemasterdata from "./components/categories/Ratemasterdata";
+import Ratemaster from "./components/categories/Ratemaster";
+import Menueng from "./components/categories/Menueng";
 import Comingsoon from "./components/categories/Comingsoon";
 
 function App() {
@@ -33,18 +27,12 @@ function App() {
       <Route path="/" element={<RootComponent />}>
         <Route index element={<Home />} /> {/* Default page */}
         <Route path="/home" element={<Home />} />
-        <Route path="/reports" element={<Report />} />
-        <Route path="/access" element={<Access />} />
-        <Route path="/settings" element={<Setting />} />
         <Route path="/recipesummary" element={<Summaryrecipe />} />
         <Route path="/foodrecipe" element={<Foodrecipe />} />
-        <Route path="/summaryentry" element={<Summaryentry />} />
-        <Route path="/foodrecipeentry" element={<Foodrecipeentry />} />
-        <Route path="/baserecipeentry" element={<Baserecipeentry />} />
-        <Route path="/ratemaster" element={<Ratemaster />} />
-        <Route path="/ratemasterentry" element={<Ratemasterentry />} />
+        <Route path="/ingratemaster" element={<Ingredientratemaster />} />
         <Route path="/baserecipe" element={<Baserecipe />} />
-        <Route path="/ratemasterdata" element={<Ratemasterdata />} />
+        <Route path="/ratemaster" element={<Ratemaster />} />
+        <Route path="/menueng" element={<Menueng />} />
         <Route path="/comingsoon" element={<Comingsoon />} />
       </Route>
     )
